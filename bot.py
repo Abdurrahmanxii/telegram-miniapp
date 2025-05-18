@@ -1,7 +1,7 @@
 import requests
 
-TOKEN = "7506795414:AAG0hcynX6EbWT_X1LGu1fMmXTzM6MS1XNM"
-WEBAPP_URL = "https://username.github.io/telegram-miniapp/index.html"
+TOKEN = "Your token bot"
+WEBAPP_URL = "https://username.github.io/your bot/index.html"
 
 menu_data = {
     "menu_button": {
