@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Telegram Mini App</title>
+    <meta charset="utf-8" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  </head>
+  <body>
+    <h1>Halo dari Mini App Telegram!</h1>
+    <button onclick="showQueryId()">Tampilkan Query ID</button>
+    <p id="result"></p>
+
+    <script>
+      const tg = window.Telegram.WebApp;
+      tg.ready();
+      function showQueryId() {
+        const queryId = tg.initDataUnsafe.query_id;
+        document.getElementById("result").innerText = "Query ID: " + queryId;
+      }
+    </script>
+  </body>
+</html>
